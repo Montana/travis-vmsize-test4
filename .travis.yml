@@ -28,17 +28,17 @@ jobs:
        language: generic
        script: echo "size test"
        vm:
-         size: large
-         - os: osx
+         size: small
+     - os: osx
        language: generic
        script: echo "size test"
        vm:
          size: medium
-         - os: osx
+     - os: osx
        language: generic
        script: echo "size test"
        vm:
-         size: small
+         size: large
      - os: osx
        language: generic
        script: echo "Hello"
