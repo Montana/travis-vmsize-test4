@@ -60,4 +60,3 @@ jobs:
          size: x-large
      - os: freebsd
        script: python ./hello.py
- Copy travis-vmsize-test4:.travis.yml
