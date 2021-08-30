@@ -1,5 +1,6 @@
 language: python
 virt: vm
+arch: amd64
 
 jobs:
   include:
