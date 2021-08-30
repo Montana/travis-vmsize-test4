@@ -24,12 +24,6 @@ jobs:
        script: 
         - echo "Threads/core $(nproc --all)"
         - free -g
-     - dist: focal
-       vm:
-         size: 2x-large
-       script: 
-        - echo "Threads/core $(nproc --all)"
-        - free -g
      - os: osx
        python: "2.7"
        script: python ./hello.py
@@ -47,12 +41,7 @@ jobs:
        python: "2.7"
        script: python ./hello.py
        vm:
-         size: x-large
-     - os: osx
-       python: "2.7"
-       script: python ./hello.py
-       vm:
-         size: 2x-large
+         size: x-large 
      - os: freebsd
        script: python ./hello.py
      - os: freebsd
@@ -69,33 +58,3 @@ jobs:
          size: x-large
      - os: freebsd
        script: python ./hello.py
-       vm:
-         size: 2x-large
-     - os: windows
-     - os: windows
-       vm:
-         size: medium
-     - os: windows
-       vm:
-         size: large
-     - os: windows
-       vm:
-         size: x-large
-     - os: windows
-       vm:
-         size: 2x-large
-     - arch: ppc64le
-     - arch: s390x
-     - arch: arm64
-     - arch: arm64
-       vm:
-         size: large
-     - arch: arm64-graviton2
-       group: edge
-       dist: focal
-     - arch: arm64-graviton2
-       group: edge
-       dist: focal
-       virt: vm
-       vm:
-         size: x-large
