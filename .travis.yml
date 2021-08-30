@@ -25,12 +25,12 @@ jobs:
        script: 
         - echo "Threads/core $(nproc --all)"
         - free -g
-     - os: osx
+     - os: osx # sizing not available for osx
        language: generic
        script: echo "size test"
        vm:
          size: large
-     - os: osx
+     - os: osx # sizing not available for osx
        language: generic
        script: echo "Hello"
        vm:
