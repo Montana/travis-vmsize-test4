@@ -1,6 +1,5 @@
 language: python
 virt: vm
-arch: amd64
 
 jobs:
   include:
@@ -50,5 +49,5 @@ jobs:
        script: python ./hello.py
        vm:
          size: x-large
-    - os: freebsd
+     - os: freebsd
        script: python ./hello.py
