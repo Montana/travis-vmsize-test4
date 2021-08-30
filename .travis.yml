@@ -4,3 +4,21 @@ vm:
   size: 2x-large
 script:
   - 'exit 0'
+  
+ - os: osx
+       python: "2.7"
+       script: python ./hello.py
+     - os: osx
+       python: "2.7"
+       script: python ./hello.py
+       vm:
+         size: medium
+     - os: osx
+       python: "2.7"
+       script: python ./hello.py
+       vm:
+         size: large
+     - os: osx
+       python: "2.7"
+       script: python ./hello.py
+         size: large
