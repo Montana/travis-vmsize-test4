@@ -1,5 +1,6 @@
 language: python
 virt: vm
+group: edge
 
 jobs:
   include:
